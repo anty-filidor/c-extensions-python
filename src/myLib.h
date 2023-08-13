@@ -12,10 +12,10 @@ static PyMethodDef MyLibMethods[] = {
 
 static struct PyModuleDef mylibmodule = {
     PyModuleDef_HEAD_INIT,
-    "mylib",
+    "my_lib",  // this name should be the same as in PyMODINIT_FUNC
     "Python interface for C library functions",
     -1,
     MyLibMethods
 };
 
-PyMODINIT_FUNC PyInit_mylib(void) {return PyModule_Create(&mylibmodule);}
+PyMODINIT_FUNC PyInit_my_lib(void) {return PyModule_Create(&mylibmodule);}

@@ -8,11 +8,12 @@ def main():
             author_email="your_email@gmail.com",
             ext_modules=[
                 Extension(
-                    "mylib",
+                    "my_library.my_lib",
                     include_dirs=["src"],
                     sources=["src/myLib.c"],
                 )
-            ]
+            ],
+            packages=["my_library"],
     )
 
 if __name__ == "__main__":
