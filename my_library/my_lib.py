@@ -1,5 +1,13 @@
-"""Interfate for C extended functions."""
+"""Interface for C extended functions."""
 
-def fputs(str: str, fname: str) -> None:
+from typing import List
+
+
+def fputs(str: str, filename: str) -> None:
     """Wrapper for fputs C function."""
+    ...
+
+
+def process_file(filename: str) -> List[List[int]]:
+    """Process a file and return a list of lists."""
     ...
